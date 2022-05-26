@@ -44,4 +44,4 @@ export default () => {
 | proFormSelectProps | ProFormSelect 属性 | ProFormSelectProps |
 | fieldProps | fieldProps 属性 | ProFormSelect 的 fieldProps SelectProps |
 | extraPageProps | 分页属性 | PaginationProps |
-| asyncGetList | 获取数据并处理 | (setPageProps(修改 pageProps ahooks 的 SetState 方式): SetState\<PaginationProps>,setOptions(设置 select 的 options): React.Dispatch\<React.SetStateAction<any[]>>,) => void |
+| asyncGetList | 获取数据并处理 | (setPageProps(修改 pageProps ahooks 的 SetState 方式): SetState\<PaginationProps>,setOptions(设置 select 的 options): React.Dispatch\<React.SetStateAction<any[]>>,pageProps: PaginationProps,) => void |

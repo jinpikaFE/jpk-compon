@@ -17,6 +17,7 @@ export type TFormSelectPage = {
   asyncGetList: (
     setPageProps: SetState<PaginationProps>,
     setOptions: React.Dispatch<React.SetStateAction<any[]>>,
+    pageProps: PaginationProps,
   ) => void;
 };
 
@@ -55,7 +56,7 @@ const FormSelectPage: FC<TFormSelectPage> = (props) => {
   };
 
   useEffect(() => {
-    asyncGetList(setPageProps, setOptions);
+    asyncGetList(setPageProps, setOptions, pageProps);
   }, [pageProps.current, pageProps.pageSize, searchVal]);
 
   return (
