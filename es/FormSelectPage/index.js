@@ -73,7 +73,7 @@ var FormSelectPage = function FormSelectPage(props) {
   };
 
   useEffect(function () {
-    asyncGetList(setPageProps, setOptions);
+    asyncGetList(setPageProps, setOptions, pageProps);
   }, [pageProps.current, pageProps.pageSize, searchVal]);
   return /*#__PURE__*/React.createElement(ProFormSelect, _objectSpread({
     mode: "multiple",

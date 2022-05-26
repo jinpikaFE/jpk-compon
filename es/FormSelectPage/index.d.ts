@@ -11,7 +11,7 @@ export declare type TFormSelectPage = {
     /** 分页属性 */
     extraPageProps?: PaginationProps;
     /** 获取数据并处理 */
-    asyncGetList: (setPageProps: SetState<PaginationProps>, setOptions: React.Dispatch<React.SetStateAction<any[]>>) => void;
+    asyncGetList: (setPageProps: SetState<PaginationProps>, setOptions: React.Dispatch<React.SetStateAction<any[]>>, pageProps: PaginationProps) => void;
 };
 declare const FormSelectPage: FC<TFormSelectPage>;
 export default FormSelectPage;
